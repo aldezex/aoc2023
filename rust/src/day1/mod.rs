@@ -74,6 +74,6 @@ mod test {
 
     #[test]
     fn test_calibrate_v2() {
-        assert_eq!(calibrate_v2(), 55477);
+        assert_eq!(calibrate_v2(), 54431);
     }
 }
