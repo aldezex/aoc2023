@@ -37,11 +37,6 @@ fn get_winning_numbers() -> usize {
             power = 2_i32.pow((count - 1).try_into().unwrap());
         }
 
-        println!(
-            "Card number: {}, my lucky numbers: {:?}, power: {}",
-            card_number, my_lucky_numbers, power
-        );
-
         sum += power;
     }
 
