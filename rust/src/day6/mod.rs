@@ -43,6 +43,21 @@ fn get_winning_races() -> u32 {
     sum
 }
 
+// idiomatic Rust is a lot funnier
+fn count(time: i32, record: i32) -> i32 {
+    (0..time).filter(|&t| t * (time - t) > record)
+        .count() as i32
+}
+
+fn for_fun_idiomatic_rust() -> i32 {
+    [
+        (53, 275),
+        (71, 1181),
+        (78, 1215),
+        (80, 1524),
+    ].iter().map(|&(time, record)| count(time, record)).product()
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -50,5 +65,6 @@ mod tests {
     #[test]
     fn test_get_winning_secret() {
         assert_eq!(get_winning_races(), 449820);
+        assert_eq!(for_fun_idiomatic_rust(), 449820);
     }
 }
