@@ -79,6 +79,6 @@ mod tests {
 
     #[test]
     fn test_sum_engine_schematic() {
-        assert_eq!(sum_engine_schematic(), 0);
+        assert_eq!(sum_engine_schematic(), 3597703);
     }
 }

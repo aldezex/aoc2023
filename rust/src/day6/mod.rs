@@ -49,6 +49,6 @@ mod tests {
 
     #[test]
     fn test_get_winning_secret() {
-        assert_eq!(get_winning_races(), 0);
+        assert_eq!(get_winning_races(), 449820);
     }
 }

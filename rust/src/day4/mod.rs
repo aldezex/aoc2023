@@ -49,6 +49,6 @@ mod tests {
 
     #[test]
     fn test_get_winning_numbers() {
-        assert_eq!(get_winning_numbers(), 0);
+        assert_eq!(get_winning_numbers(), 23441);
     }
 }
